@@ -6,10 +6,10 @@
 #include <algorithm>
 using namespace std;
 
-//Manacher算法求最长回文子串
-//接口: string Manacher(string s)
-//输入: string s
-//输出: s的最长回文子串
+//功能：Manacher算法求最长回文子串
+//接口：string Manacher(string s)
+//输入：string s
+//输出：s的最长回文子串
 
 string Manacher(string s) {
     // Insert '#'
