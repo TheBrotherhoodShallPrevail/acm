@@ -45,10 +45,10 @@ pll linear(ll *A, ll *B, ll *M, int n)
 {
     ll x = 0, m = 1;
     for (int i = 0; i < n; i++) 
-	{
+    {
         ll a = A[i] * m, b = B[i] - A[i] * x, d = gcd(M[i], a);
         if (b % d != 0)  
-			return pll(0, -1);//答案不存在, 返回-1 
+		return pll(0, -1);//答案不存在, 返回-1 
         ll t = b / d * inv(a / d, M[i] / d) % (M[i] / d);
         x = x + m * t;
         m *= M[i] / d;
